@@ -4,13 +4,13 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send("<h1>'Hello World!'</h1>");
 })
 
 app.get('/tes', function (req, res) {
-    return res.send('Hello Tes!');
+    return res.send("<h1>Hello Tes Nodemon!</h1>");
 })
-ç
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
